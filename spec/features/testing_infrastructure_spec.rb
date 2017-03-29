@@ -6,16 +6,17 @@ feature "Testing Infrastructure" do
   # end
 
   scenario "expects player1 to fill in their name" do
-    visit('/')
-    fill_in('player1_name', :with => 'Nick')
-    click_button('Submit')
+    sign_in_and_play
     expect(page).to have_content 'Nick'
   end
 
   scenario "expect player2 to fill in their name" do
-    visit('/')
-    fill_in('player2_name', :with => 'JJ')
-    click_button('Submit')
+    sign_in_and_play
     expect(page).to have_content 'JJ'
+  end
+
+  scenario "expects to see Player 2's Hit Points" do
+    visit('/play')
+    expect(page).to have_content('HP')
   end
 end
