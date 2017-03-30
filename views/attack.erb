@@ -1,2 +1,8 @@
 <!-- <iframe src="//giphy.com/embed/xTiTnoHt2NwerFMsCI" width="480" height="269.6629213483146" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wwe-john-cena-super-saiyan-xTiTnoHt2NwerFMsCI"></a></p> -->
-<%=@player1_name%> attacked <%=@player2_name%>
+<%=@player1.name%> attacked with a BIG hug <%=@player2.name%>
+<h1></h1>
+<%=@player2.name%> HP HAS NOW GONE DOWN TO: <%=$player2.hp%>
+
+<!--
+When in a HTML document, we cannot call methods in Ruby.
+We need to call them in app.rb and assign the result to a variable. -->
