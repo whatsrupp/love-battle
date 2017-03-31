@@ -16,6 +16,6 @@ feature "Testing Infrastructure" do
 
   scenario "expects to see Player 2's Hit Points" do
     visit('/play')
-    expect(page).to have_content('HP')
+    expect(page).to have_content('enters bar')
   end
 end

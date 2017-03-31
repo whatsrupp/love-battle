@@ -1,16 +1,19 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="play-style.css">
   </head>
   <body>
     <center>
-      <h3> <%=@game.player1.name%> clocking in to kick some a$$ </h3>
-      <h3> <%=@game.player2.name%> back in the game for some major love </h3>
+
+      <h1><%=@game.player1.name%> enters bar, the ambiance is steamy, glasses clinking, cutlery rattling.<br>
+        The babbling chatter soothes <%=@game.player1.name%>'s nerves as they spot <br>
+    <%=@game.player2.name%> recling gently in an electric blue bombo bar stool, scotch on the rocks cradled in the left hand.<br>
+    <%=@game.player2.name%> turns and gets eye contact, the sexual tension is palpable...<br>
+      But what will happen next?</h1>
 
       <%=@game.player1.name%>: <%=@game.player1.hp%> DP
-      <h>
-      </h>
+      <br>
       <%=@game.player2.name%>: <%=@game.player2.hp%> DP
 
       <form action="/attack">

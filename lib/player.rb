@@ -1,6 +1,6 @@
 class Player
 
-  DEFAULT_HP = 100
+  DEFAULT_HP = 0
 
   attr_reader :name, :hp
   attr_writer :name, :hp
@@ -13,5 +13,5 @@ class Player
   def receive_damage
     @hp -= 10
   end
-  
+
 end
