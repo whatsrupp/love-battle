@@ -1,11 +1,23 @@
-<h3> <%=@game.player1.name%> clocking in to kick some a$$ </h3>
-<h3> <%=@game.player2.name%> back in the game for some major love </h3>
 
-<%=@game.player1.name%>: <%=@game.player1.hp%> HP
-<h>
-</h>
-<%=@game.player2.name%>: <%=@game.player2.hp%> HP
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <center>
+      <h3> <%=@game.player1.name%> clocking in to kick some a$$ </h3>
+      <h3> <%=@game.player2.name%> back in the game for some major love </h3>
 
-<form action="/attack">
-  <input type='submit' value="Attack">
-</form>
+      <%=@game.player1.name%>: <%=@game.player1.hp%> DP
+      <h>
+      </h>
+      <%=@game.player2.name%>: <%=@game.player2.hp%> DP
+
+      <form action="/attack">
+        <input type='submit' value="Attack">
+      </form>
+
+    </center>
+  <body>
+
+</html>

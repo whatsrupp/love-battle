@@ -16,12 +16,6 @@ subject(:player2) { described_class.new("JJ") }
     end
   end
 
-  describe "#attack" do
-    it "damages the player" do
-      expect(player2).to receive(:receive_damage) #
-      player1.attack(player2) # When player2 gets attacked, except receive damage.
-    end
-  end
 
   describe "#receive_damage" do
     it "want an attack to reduce a player's HP by 10" do
